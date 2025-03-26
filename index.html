@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Free online document tools - compress images, remove backgrounds, convert PDF to Word and Word to PDF with ease"
+		/>
+		<meta
+			name="keywords"
+			content="image compression, background remover, PDF to Word, Word to PDF, online document tools"
+		/>
+		<meta name="author" content="Document Tools" />
+		<meta name="robots" content="index, follow" />
+		<title>Document Tools - Image Compression, PDF Conversion & More</title>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://yourwebsite.com/" />
+		<meta
+			property="og:title"
+			content="Document Tools - Image Compression, PDF Conversion & More"
+		/>
+		<meta
+			property="og:description"
+			content="Free online document tools - compress images, remove backgrounds, convert PDF to Word and Word to PDF with ease"
+		/>
+		<meta
+			property="og:image"
+			content="https://yourwebsite.com/images/preview.jpg"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://yourwebsite.com/" />
+		<meta
+			property="twitter:title"
+			content="Document Tools - Image Compression, PDF Conversion & More"
+		/>
+		<meta
+			property="twitter:description"
+			content="Free online document tools - compress images, remove backgrounds, convert PDF to Word and Word to PDF with ease"
+		/>
+		<meta
+			property="twitter:image"
+			content="https://yourwebsite.com/images/preview.jpg"
+		/>
+
+		<!-- Favicon -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://yourwebsite.com/" />
+
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-content">
+					<a href="#" class="logo">
+						<i class="fas fa-tools"></i>
+						<span>DocTools</span>
+					</a>
+					<button class="mobile-menu-btn" id="mobileMenuBtn">
+						<i class="fas fa-bars"></i>
+					</button>
+					<nav id="mainNav">
+						<ul>
+							<li><a href="#image-compression">Image Tools</a></li>
+							<li><a href="#pdf-tools">PDF Tools</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero">
+			<div class="container">
+				<h1>Powerful Document Tools for Everyone</h1>
+				<p>
+					Compress images, remove backgrounds, convert documents - all for free
+					with our easy-to-use online tools. No registration required.
+				</p>
+			</div>
+		</section>
+
+		<!-- Ad Container Top -->
+		<div class="container">
+			<div class="ad-container">
+				<span class="ad-label">Advertisement</span>
+				<!-- Replace with your Google AdSense code -->
+				<div id="top-ad">
+					<script
+						async
+						src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+						crossorigin="anonymous"
+					></script>
+					<!-- Top Banner Ad -->
+					<ins
+						class="adsbygoogle"
+						style="display: block"
+						data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+						data-ad-slot="YOUR_AD_SLOT_ID"
+						data-ad-format="auto"
+						data-full-width-responsive="true"
+					></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<section class="tools-section" id="image-compression">
+			<div class="container">
+				<div class="section-title">
+					<h2>Image Tools</h2>
+					<p>Optimize and enhance your images with our powerful tools</p>
+				</div>
+
+				<div class="tools-grid">
+					<!-- Image Compression Tool -->
+					<div class="tool-card">
+						<div class="tool-card-header">
+							<i class="fas fa-compress-alt"></i>
+							<h3>Image Compression</h3>
+						</div>
+						<div class="tool-card-body">
+							<div class="tool-description">
+								Reduce image file size without losing quality. Perfect for
+								websites and social media.
+							</div>
+
+							<div class="file-upload">
+								<label for="image-upload" class="file-upload-label">
+									<i class="fas fa-cloud-upload-alt"></i>
+									<p>Choose an image file</p>
+									<span>JPG, PNG, GIF, SVG (Max 10MB)</span>
+								</label>
+								<input
+									type="file"
+									id="image-upload"
+									class="file-upload-input"
+									accept="image/*"
+								/>
+								<div id="selected-image" class="selected-file"></div>
+							</div>
+
+							<div class="options">
+								<div class="option-group">
+									<label for="compression-level">Compression Level</label>
+									<input
+										type="range"
+										id="compression-level"
+										class="range-slider"
+										min="0"
+										max="100"
+										value="70"
+									/>
+									<div class="slider-labels">
+										<span>Low</span>
+										<span>Medium</span>
+										<span>High</span>
+									</div>
+								</div>
+
+								<div class="option-group">
+									<label>Options</label>
+									<div class="checkbox-option">
+										<input type="checkbox" id="keep-metadata" checked />
+										<label for="keep-metadata">Keep metadata</label>
+									</div>
+									<div class="checkbox-option">
+										<input type="checkbox" id="resize-image" />
+										<label for="resize-image">Resize image</label>
+									</div>
+								</div>
+							</div>
+
+							<button id="compress-btn" class="btn">
+								<i class="fas fa-compress-arrows-alt"></i> Compress Image
+							</button>
+
+							<div id="compression-spinner" class="spinner"></div>
+
+							<div id="compression-result" class="result-section">
+								<h4>Compression Complete!</h4>
+								<div class="result-stats">
+									<div class="stat-item">
+										<div class="stat-value" id="original-size">0 KB</div>
+										<div class="stat-label">Original</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-value" id="compressed-size">0 KB</div>
+										<div class="stat-label">Compressed</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-value" id="reduction-percent">0%</div>
+										<div class="stat-label">Reduction</div>
+									</div>
+								</div>
+								<button id="download-compressed" class="btn download-btn">
+									<i class="fas fa-download"></i> Download Compressed Image
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Background Removal Tool -->
+					<div class="tool-card">
+						<div class="tool-card-header">
+							<i class="fas fa-cut"></i>
+							<h3>Background Removal</h3>
+						</div>
+						<div class="tool-card-body">
+							<div class="tool-description">
+								Remove backgrounds from images automatically with AI. Perfect
+								for product photos and portraits.
+							</div>
+
+							<div class="file-upload">
+								<label for="bg-remove-upload" class="file-upload-label">
+									<i class="fas fa-cloud-upload-alt"></i>
+									<p>Choose an image file</p>
+									<span>JPG, PNG (Max 5MB)</span>
+								</label>
+								<input
+									type="file"
+									id="bg-remove-upload"
+									class="file-upload-input"
+									accept="image/*"
+								/>
+								<div id="selected-bg-image" class="selected-file"></div>
+							</div>
+
+							<div class="options">
+								<div class="option-group">
+									<label for="bg-removal-quality">Output Quality</label>
+									<input
+										type="range"
+										id="bg-removal-quality"
+										class="range-slider"
+										min="1"
+										max="100"
+										value="85"
+									/>
+									<div class="slider-labels">
+										<span>Low</span>
+										<span>Medium</span>
+										<span>High</span>
+									</div>
+								</div>
+
+								<div class="option-group">
+									<label for="bg-color">Background Color</label>
+									<select id="bg-color" class="form-control">
+										<option value="transparent">Transparent</option>
+										<option value="white">White</option>
+										<option value="black">Black</option>
+										<option value="custom">Custom Color</option>
+									</select>
+								</div>
+							</div>
+
+							<button id="remove-bg-btn" class="btn">
+								<i class="fas fa-magic"></i> Remove Background
+							</button>
+
+							<div id="bg-remove-spinner" class="spinner"></div>
+
+							<div id="bg-remove-result" class="result-section">
+								<h4>Background Removed Successfully!</h4>
+								<div class="result-stats">
+									<div class="stat-item">
+										<div class="stat-value" id="processing-time">0.5s</div>
+										<div class="stat-label">Processing Time</div>
+									</div>
+								</div>
+								<button id="download-bg-removed" class="btn download-btn">
+									<i class="fas fa-download"></i> Download Result
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Middle Ad Container -->
+		<div class="container">
+			<div class="ad-container">
+				<span class="ad-label">Advertisement</span>
+				<!-- Replace with your Google AdSense code -->
+				<div id="middle-ad">
+					<script
+						async
+						src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+						crossorigin="anonymous"
+					></script>
+					<!-- Middle Rectangle Ad -->
+					<ins
+						class="adsbygoogle"
+						style="display: block"
+						data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+						data-ad-slot="YOUR_AD_SLOT_ID"
+						data-ad-format="auto"
+						data-full-width-responsive="true"
+					></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<section class="tools-section" id="pdf-tools">
+			<div class="container">
+				<div class="section-title">
+					<h2>PDF Tools</h2>
+					<p>Convert and transform your PDF documents with ease</p>
+				</div>
+
+				<div class="tools-grid">
+					<!-- PDF to Word Tool -->
+					<div class="tool-card">
+						<div class="tool-card-header">
+							<i class="fas fa-file-word"></i>
+							<h3>PDF to Word</h3>
+						</div>
+						<div class="tool-card-body">
+							<div class="tool-description">
+								Convert your PDF documents to editable Word files while
+								preserving the original formatting.
+							</div>
+
+							<div class="file-upload">
+								<label for="pdf-to-word-upload" class="file-upload-label">
+									<i class="fas fa-cloud-upload-alt"></i>
+									<p>Choose a PDF file</p>
+									<span>PDF (Max 20MB)</span>
+								</label>
+								<input
+									type="file"
+									id="pdf-to-word-upload"
+									class="file-upload-input"
+									accept=".pdf"
+								/>
+								<div id="selected-pdf-file" class="selected-file"></div>
+							</div>
+
+							<div class="options">
+								<div class="option-group">
+									<label for="word-format">Output Format</label>
+									<select id="word-format" class="form-control">
+										<option value="docx">DOCX (Word 2007+)</option>
+										<option value="doc">DOC (Word 97-2003)</option>
+										<option value="rtf">RTF (Rich Text)</option>
+									</select>
+								</div>
+
+								<div class="option-group">
+									<label>Options</label>
+									<div class="checkbox-option">
+										<input type="checkbox" id="preserve-layout" checked />
+										<label for="preserve-layout">Preserve layout</label>
+									</div>
+									<div class="checkbox-option">
+										<input type="checkbox" id="ocr-enabled" />
+										<label for="ocr-enabled">Enable OCR (scanned PDFs)</label>
+									</div>
+								</div>
+							</div>
+
+							<button id="convert-to-word-btn" class="btn">
+								<i class="fas fa-exchange-alt"></i> Convert to Word
+							</button>
+
+							<div id="pdf-to-word-spinner" class="spinner"></div>
+
+							<div id="pdf-to-word-result" class="result-section">
+								<h4>Conversion Complete!</h4>
+								<div class="result-stats">
+									<div class="stat-item">
+										<div class="stat-value" id="pdf-pages">0</div>
+										<div class="stat-label">Pages</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-value" id="word-file-size">0 KB</div>
+										<div class="stat-label">File Size</div>
+									</div>
+								</div>
+								<button id="download-word-file" class="btn download-btn">
+									<i class="fas fa-download"></i> Download Word File
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Word to PDF Tool -->
+					<div class="tool-card">
+						<div class="tool-card-header">
+							<i class="fas fa-file-pdf"></i>
+							<h3>Word to PDF</h3>
+						</div>
+						<div class="tool-card-body">
+							<div class="tool-description">
+								Convert Word documents to high-quality PDF files with perfect
+								formatting.
+							</div>
+
+							<div class="file-upload">
+								<label for="word-to-pdf-upload" class="file-upload-label">
+									<i class="fas fa-cloud-upload-alt"></i>
+									<p>Choose a Word file</p>
+									<span>DOC, DOCX, RTF (Max 20MB)</span>
+								</label>
+								<input
+									type="file"
+									id="word-to-pdf-upload"
+									class="file-upload-input"
+									accept=".doc,.docx,.rtf"
+								/>
+								<div id="selected-word-file" class="selected-file"></div>
+							</div>
+
+							<div class="options">
+								<div class="option-group">
+									<label for="pdf-quality">PDF Quality</label>
+									<input
+										type="range"
+										id="pdf-quality"
+										class="range-slider"
+										min="1"
+										max="100"
+										value="90"
+									/>
+									<div class="slider-labels">
+										<span>Low</span>
+										<span>Medium</span>
+										<span>High</span>
+									</div>
+								</div>
+
+								<div class="option-group">
+									<label>Options</label>
+									<div class="checkbox-option">
+										<input type="checkbox" id="preserve-links" checked />
+										<label for="preserve-links">Preserve hyperlinks</label>
+									</div>
+									<div class="checkbox-option">
+										<input type="checkbox" id="optimize-pdf" />
+										<label for="optimize-pdf">Optimize for web</label>
+									</div>
+								</div>
+							</div>
+
+							<button id="convert-to-pdf-btn" class="btn">
+								<i class="fas fa-exchange-alt"></i> Convert to PDF
+							</button>
+
+							<div id="word-to-pdf-spinner" class="spinner"></div>
+
+							<div id="word-to-pdf-result" class="result-section">
+								<h4>Conversion Complete!</h4>
+								<div class="result-stats">
+									<div class="stat-item">
+										<div class="stat-value" id="pdf-file-size">0 KB</div>
+										<div class="stat-label">File Size</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-value" id="pdf-quality-level">High</div>
+										<div class="stat-label">Quality</div>
+									</div>
+								</div>
+								<button id="download-pdf-file" class="btn download-btn">
+									<i class="fas fa-download"></i> Download PDF File
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Bottom Ad Container -->
+		<div class="container">
+			<div class="ad-container">
+				<span class="ad-label">Advertisement</span>
+				<!-- Replace with your Google AdSense code -->
+				<div id="bottom-ad">
+					<script
+						async
+						src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+						crossorigin="anonymous"
+					></script>
+					<!-- Bottom Banner Ad -->
+					<ins
+						class="adsbygoogle"
+						style="display: block"
+						data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+						data-ad-slot="YOUR_AD_SLOT_ID"
+						data-ad-format="auto"
+						data-full-width-responsive="true"
+					></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-column">
+						<h4>DocTools</h4>
+						<p>
+							Free online document tools to make your work easier. No
+							registration, no watermarks, completely free to use.
+						</p>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+					<div class="footer-column">
+						<h4>Tools</h4>
+						<ul>
+							<li><a href="#image-compression">Image Compression</a></li>
+							<li><a href="#pdf-tools">Background Removal</a></li>
+							<li><a href="#pdf-tools">PDF to Word</a></li>
+							<li><a href="#pdf-tools">Word to PDF</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h4>Resources</h4>
+						<ul>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Tutorials</a></li>
+							<li><a href="#">API Documentation</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h4>Company</h4>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>
+						&copy; <span id="current-year"></span> DocTools. All rights
+						reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
